@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Tempo Juntos</title>
+    <style>
+        /* Estilos para deixar bonito */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #47e0eb; /* Cor do texto */
+            text-align: center;
+            margin: 0;
+            padding: 40px;
+
+        /* --- MÁGICA DO FUNDO --- */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.postimg.cc/Bt9jpBWd/Whats-App-Image-2025-06-11-at-21-29-56-1.jpg');
+        background-size: cover; /* Faz a imagem cobrir todo o fundo */
+        background-position: center; /* Centraliza a imagem */
+        background-attachment: fixed; /* Deixa a imagem fixa enquanto rola a página */
+            
+        }
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        #contador {
+            /* --- background-color: #4d66f3; ---*/
+            color: rgb(177, 208, 233);
+            padding: 70px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 3em;
+            font-weight: bold;
+            min-width: 400px;
+        }
+
+        figcaption {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2px 5px;
+            margin-top: -5px;
+            border-radius: 10px;
+            display: block;
+            width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        p {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: rgb(177, 208, 233);
+            border-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 5px 50px;
+            display: inline-block;
+            width: 700px;
+            font-size: 35px;
+        
+        }
+    </style>
+</head>
+<div>
+
+    <h1 style="font-size: 3.5em;">Nosso Tempo Juntos ❤️</h1>
+    <div id="contador">Calculando nosso tempo...</div>
+
+    <script>
+        // --- IMPORTANTE: MUDE APENAS A LINHA ABAIXO ---
+        // Formato: Ano, Mês (Janeiro=0, Fevereiro=1...), Dia, Hora, Minuto, Segundo
+        const dataInicio = new Date('2021-06-18T20:00:00'); // Exemplo: 27 de Outubro de 2022, às 20:00
+
+        function atualizarContador() {
+            const agora = new Date();
+            const diferenca = agora - dataInicio;
+
+            // Cálculos de tempo
+            const segundosTotal = Math.floor(diferenca / 1000);
+            const minutosTotal = Math.floor(segundosTotal / 60);
+            const horasTotal = Math.floor(minutosTotal / 60);
+
+            const anos = Math.floor(horasTotal / (24 * 365.25));
+            const diasRestantes = Math.floor((horasTotal / 24) % 365.25);
+            const horas = horasTotal % 24;
+            const minutos = minutosTotal % 60;
+            const segundos = segundosTotal % 60;
+
+            // Monta o texto que será exibido
+            const texto = `
+                ${anos} anos, ${diasRestantes} dias, <br>
+                ${horas} horas, ${minutos} minutos e ${segundos} segundos.
+            `;
+
+            // Atualiza o elemento na tela
+            document.getElementById('contador').innerHTML = texto;
+        }
+
+        // Faz o contador atualizar a cada segundo
+        setInterval(atualizarContador, 1000);
+
+        // Roda a função uma vez assim que a página carrega
+        atualizarContador();
+    </script>
+    <h2 style="font-size: 2em;"> <span style="color:#09fcc7d3;"> Nossos Momentos:</span></h2>
+    <figure>
+    <img src="https://i.postimg.cc/02LPFyB0/Whats-App-Image-2025-06-11-at-19-53-34.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> Essa é a foto mais antiga que tenho. Houve alguns probleminhas no percurso! 😬</figcaption>
+    <img src="https://i.postimg.cc/XqGtkw4S/Whats-App-Image-2025-06-11-at-19-53-35.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> O nosso amor foi crescendo cada dia mais... ❤️</figcaption>
+    <img src="https://i.postimg.cc/k4TNTZwL/Whats-App-Image-2025-06-11-at-21-27-29.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> E eu nao poderia esquecer da nossa primeira filha kkk, viramos pai de Pet antes de tudo. Nossa Juju que alegrou mais ainda nossa casa. 🐕‍🦺 </figcaption>
+    <img src="https://i.postimg.cc/j2pmgLSW/Whats-App-Image-2025-06-11-at-19-53-35-1.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> Você sempre liiiinda e perfeita. Sério! olha essa mulher!? Olha esse sorriso que liindo! 👸🏻</figcaption>
+    <img src="https://i.postimg.cc/MZgG25cB/Whats-App-Image-2025-06-11-at-19-53-35-2.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> Duuu nadaaa, ficamos gravidos. Siiiim, ficamos GRÁVIDOS. Por essa ninguem esperava em... 🤰🏻🫃🏻</figcaption>
+    <img src="https://i.postimg.cc/BQxJW0fW/Whats-App-Image-2025-06-11-at-19-53-36.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> E daqui começamos viver uma outra vida, novos desafios, mas tudo muuuuito bom. Nosso amor foi fortalecido. 🙏🏻</figcaption>
+    <img src="https://i.postimg.cc/T30GwJPC/Whats-App-Image-2025-06-11-at-19-53-36-1.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> Bem praiana, toda linda, com os cabelos ao vento kkk 🏝️🌊</figcaption>
+    <img src="https://i.postimg.cc/d00FTZkv/Whats-App-Image-2025-06-11-at-19-53-36-2.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> Até que nasceeu! Nasceu o maior amor das nossas vidas, transformou nossa casa. Começamos viver o melhor de Deus para nós! 🤱🏻</figcaption>
+    <img src="https://i.postimg.cc/PqFjbfYD/Whats-App-Image-2025-06-11-at-19-53-36-3.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> Adoora comer, fica muito estressada quando esta com fome, a foto fala por si a felicidade de encher o buxo. Haha 🍝</figcaption>
+    <img src="https://i.postimg.cc/NM3vVNNf/Whats-App-Image-2025-06-11-at-19-53-36-4.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> Não posso esquecer o amor por viajar, o tanto que você gosta e transmitiu isso pra mim. Adoramos uma praia, um camarão e ate um carangueijinho. kkk 🦀🏝️🌊</figcaption>
+    <img src="https://i.postimg.cc/sx5CRp8P/Whats-App-Image-2025-06-11-at-19-53-36-5.jpg"  width="300" style="border-radius:10px; margin:10px;"> <figcaption> E aqui estamos, felizes, juntos, com uma linda familia, sempre um para o outro. A exatamente 3 anos, 358 dias, alguns minutos e alguns segundos como pode acompanhar ai em cima. 😍👫🏻</figcaption>
+    </figure>
+    </div>
+<br><br><br>
+    <p>Então é isso meu amor, queria poder te dar o mundo, mas vou adiar um pouquinho isso ta? 
+        Mas tudo aqui foi de coração.
+        Eu te amo muito de verdade, quero passar o resto dos dias da minha vida com você! <br>
+        <p style="color: red;">FELIZ DIA DOS NAMORADOS! ❤️</p>
+    </p>
+    </body>
+
+</body>
+</html>
