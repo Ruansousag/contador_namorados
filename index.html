@@ -61,8 +61,60 @@
             display: inline-block;
             width: 700px;
             font-size: 35px;
-        
         }
+
+        /* =============================================== */
+/* === REGRAS PARA DISPOSITIVOS MÓVEIS (CELULAR) === */
+/* =============================================== */
+@media (max-width: 600px) {
+
+    /* Ajusta o corpo da página */
+    body {
+        padding: 20px 10px; /* Menos espaço nas laterais para aproveitar a tela */
+    }
+
+    /* Diminui os títulos */
+    h1 {
+        font-size: 3.2em; 
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+
+    /* Ajusta o contador para não quebrar a tela */
+    #contador {
+        min-width: 0;        /* Remove a largura mínima que estava atrapalhando */
+        width: 95%;          /* Faz o contador ocupar 95% da largura da tela */
+        font-size: 1.6em;    /* Diminui um pouco a fonte do contador */
+        padding: 20px 10px;  /* Ajusta o espaçamento interno */
+        line-height: 1.5;
+    }
+    
+    /* Faz as unidades de tempo ficarem um pouco maiores no celular para ler melhor */
+    .unidade-tempo {
+        font-size: 0.6em;
+    }
+
+    /* Ajusta as figuras e fotos para empilhar */
+    figure {
+        width: 90%; /* Faz cada foto ocupar 90% da tela, uma embaixo da outra */
+        margin: 20px auto; /* Centraliza a figura na tela */
+        display: block; /* Garante que elas fiquem empilhadas */
+    }
+    
+    /* A imagem dentro da figura deve ocupar 100% do espaço da figura */
+    figure img {
+        width: 100%;
+        height: auto; /* A altura se ajusta automaticamente para não distorcer */
+    }
+    
+    /* A legenda agora também ocupa a largura da figura, sem valor fixo */
+    figcaption {
+        width: auto; /* Remove a largura fixa para se ajustar ao novo tamanho */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
     </style>
 </head>
 <div>
